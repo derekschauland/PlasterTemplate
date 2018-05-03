@@ -12,6 +12,7 @@
     <parameters>
         <parameter name='AuthorName' type="user-fullname" prompt="Module author's name" />
         <parameter name='AuthorEmail' type="user-email" prompt="Contributer/Owner email" />
+	    <parameter name='CompanyName' type="text" prompt="Contributer/Owner Company" />
         <parameter name='ModuleName' type="text" prompt="Name of your module" />
         <parameter name='ModuleDescription' type="text" prompt="Brief description on this module" />
         <parameter name='ModuleVersion' type="text" prompt="Initial module version" default='0.0.1' />
@@ -66,7 +67,7 @@
                            moduleVersion='$PLASTER_PARAM_ModuleVersion'
                            rootModule='${PLASTER_PARAM_ModuleName}.psm1'
                            author='$PLASTER_PARAM_AuthorName'
-                           companyName='${PLASTER_PARAM_AuthorName}'
+                           companyName='${PLASTER_PARAM_CompanyName}'
                            description='$PLASTER_PARAM_ModuleDescription'
                            encoding='UTF8-NoBOM'/>
     </content>
